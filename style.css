@@ -1,0 +1,137 @@
+/*Gabrielle & Andreea, Programming 9y*/
+
+:root {
+ --colour-lightSlate: #90a4b0;
+ --colour-darkSlate: #222c38;
+ --colour-navySlate: #141b24;
+ --colour-gold: #8f6f07;
+ --colour-buttercup: #e3d4a3;
+ --colour-white: #ffffff;
+}
+
+/*Conway's Game of Life Style*/
+html {
+  height: 100%;
+}
+
+body {
+  background-color: var(--colour-darkSlate);
+  font-family: Lato, "Lucida Grande", "Lucida Sans Unicode", Tahoma, sans-serif;
+  font-size: calc(0.5vw + 10px);
+  color: var(--colour-white);
+  text-align: center;
+}
+
+h1 {
+  text-shadow: 3px 3px var(--colour-gold);
+  font-family: 'Notable', sans-serif;
+  margin: 50px;
+}
+
+header {
+  background-color: var(--colour-lightSlate);
+  border: 10px solid var(--colour-white);
+  border-radius: 5px;
+  max-width: 1000px;
+  margin: 50px auto 50px auto;
+  padding: 25px;
+}
+
+section {
+  margin: 10px;
+}
+
+#gameControls {
+  display: none;
+}
+
+input {
+  width: 50px;
+  margin-right: 20px;
+  border-radius: 2px;
+  border: none;
+  padding: 5px;
+}
+
+.button {
+  font-size: calc(10px + 0.5vw); 
+  color: var(--colour-white);
+  background-color: var(--colour-gold);
+  border: none;
+  border-radius: 5px;
+  height: 45px;
+  padding: 5px 10px 5px 10px;
+  margin: 5px;
+}
+
+#inputs, #gameControls {
+  max-width: 1000px;
+  padding: 10px;
+  margin: 10px auto 10px auto;
+}
+
+#inputs div {
+  display: inline-block;
+  background-color: var(--colour-navySlate);
+  border-radius: 5px;
+  padding: 10px;
+  padding-left: 20px;
+}
+
+#genCounter {
+  width: 20%;
+  background-color: var(--colour-navySlate);
+  border-radius: 5px;
+  margin: 10px auto 10px auto;
+  padding: 10px;
+}
+
+#submit {
+  width: 100px;
+  height: 45px;
+  margin: 10px auto 10px auto;
+}
+
+#fullContainer {
+  text-align: center;
+  padding: 10px;
+  margin: 50px auto 50px auto;
+}
+
+table {
+  border-collapse: collapse;
+  line-height: 0px;
+  padding: 0px;
+  margin: auto;
+}
+
+td {
+  display: inline-block;
+  border: 1px solid var(--colour-lightSlate);
+  width: 15px;
+  height: 15px;
+}
+
+.dead {
+  background-color: #ffffff;
+}
+
+.alive {
+  background-color: var(colour-darkSlate);
+}
+
+img.icon {
+    box-sizing: content-box;
+    height: 50px;
+    width: 50px;
+    padding: 20px;
+    
+    position: absolute;
+    right: 20px;
+    
+    transition: transform .5s;
+}
+
+.icon:hover {
+    transform: scale(1.2);
+}

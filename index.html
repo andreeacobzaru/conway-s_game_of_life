@@ -1,0 +1,51 @@
+<!--Gabrielle & Andreea, Programming 9y-->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Conway's Game of Life</title>
+
+    <link href="life.css" rel="stylesheet" type="text/css" />
+    <link href="https://fonts.googleapis.com/css2?family=Notable&display=swap" rel="stylesheet" />
+  </head>
+
+  <body>
+    <header>
+      <h1>Conway's Game of Life</h1>
+    </header>
+
+    <section id="inputs">
+      <div>
+        <label for="rows">Rows</label>
+        <input id="rows" type="number" min="1" />
+      </div>
+      <div>
+        <label for="cols">Columns</label>
+        <input id="cols" type="number" min="1" />
+      </div>
+      <div>
+        <label for="gen">Number of Generations</label>
+        <input id="numGen" type="number" min="1" />
+      </div>
+        <button id="submit" class="button" type="button">Submit</button>
+    </section>
+      
+    <section id="fullContainer">
+    </section>
+
+    <section id="genCounter">
+      <p>Generation: <span id="generation">0</span></p>
+    </section>
+
+    <section id="gameControls">
+      <button id="start" class="button" type="button">Run My Generations</button>
+      <button id="nextGen" class="button" type="button">Next Generation</button>
+      <button id="clear" class="button" type="button">Clear Grid</button>
+      <button id="reset" class="button" type="button">Reset</button>
+    </section>
+
+    <script src="virus.js" type="text/javascript"></script>
+  </body>
+</html>    
